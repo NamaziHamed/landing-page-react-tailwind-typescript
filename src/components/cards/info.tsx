@@ -13,7 +13,7 @@ export default function Info({ title, description, children }: InfoProps) {
         bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden"
     >
       <div
-        className="rounded-xl bg-gray dark:bg-gray-950
+        className="rounded-xl bg-body
         text-heading-1 w-max relative"
       >
         {children}

@@ -13,7 +13,7 @@ export default function Service({ title, description, icon }: ServiceProps) {
         bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden"
     >
       <div
-        className="rounded-xl bg-gray-300 dark:bg-gray-950
+        className="rounded-xl bg-body
             text-heading-1 p-3 w-max relative"
       >
         {icon}

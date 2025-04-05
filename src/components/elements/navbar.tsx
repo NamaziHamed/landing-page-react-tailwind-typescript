@@ -4,7 +4,7 @@ import NavItem from "../shared/navItem";
 import BtnLink from "../shared/BtnLink";
 import UseThemeStore from "../../store/themeStore";
 
-const navItems = [
+export const navItems = [
   { text: "Home", href: "#" },
   { text: "About", href: "#about" },
   { text: "Services", href: "#services" },
@@ -53,13 +53,14 @@ export default function Navbar() {
             >
               <BtnLink text="Get Started" href="#cta" className="" />
             </div>
+          </div>
 
-            <div className="min-w-max flex items-center gap-x-3">
-              <button
-                className="outline-hidden flex relative text-heading-2 rounded-full p-2
+          <div className="min-w-max flex items-center gap-x-3">
+            <button
+              className="outline-hidden flex relative text-heading-2 rounded-full p-2
                 lg:p-3 border border-box-border cursor-pointer"
-                onClick={toggleTheme}
-              >
+              onClick={toggleTheme}
+            >
               {theme === "dark" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +92,7 @@ export default function Navbar() {
                   />
                 </svg>
               )}
-              </button>
-            </div>
+            </button>
           </div>
         </nav>
       </Container>
